@@ -4,14 +4,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
-    <h1>HTML Form</h1>
     <main class="main">
       <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
@@ -54,7 +54,7 @@
 
           <div class="form_field">
             <label for="age_field">
-              How old are you?
+              How old are You?
             </label>
             <input
             class="input"
@@ -103,7 +103,7 @@
 
           <div class="form_field">
             <label for="email_field">
-              Email:
+              E-mail:
             </label>
             <input
             class="input"
@@ -179,16 +179,17 @@
             type="time"
             name="timeToBed"
             id="time_to_bed_field"
+            step="2"
             >
           </div>
 
           <div class="form_field">
-            <label for="brand_of_car_field">
-              What is your favorite brand of car?
+            <label for="brand_of_cars_field">
+              What are your favorite brand of cars?
             </label>
             <select
             name="brandOfCar"
-            id="brand_of_car_field"
+            id="brand_of_cars_field"
             multiple
             >
               <option value="BMW">
@@ -197,8 +198,8 @@
               <option value="Audi">
                 Audi
               </option>
-              <option value="Lada?">
-                Lada?
+              <option value="Lada">
+                Lada
               </option>
             </select>
           </div>
@@ -214,6 +215,7 @@
             id="our_work_rate"
             min="1"
             max="10"
+            value="1"
             >
           </div>
 
@@ -232,8 +234,8 @@
             <textarea
             name="comments"
             id="comments_field"
-            cols="30"
-            rows="3"
+            cols="20"
+            rows="2"
             autocomplete="off"
             ></textarea>
           </div>
@@ -244,20 +246,24 @@
             </label>
             <select name="recommend" id="recommend_field">
               <option value="Yes">
-                Yes
+                yes
               </option>
               <option value="No">
-                No
+                no
               </option>
               <option value="Can`t answer">
-                Can`t answer
+                can`t answer
               </option>
             </select>
           </div>
 
         </fieldset>
 
-        <input class="input" type="submit">
+        <input
+        class="input"
+        type="submit"
+        value="Submit"
+        >
 
       </form>
     </main>
